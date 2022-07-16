@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Online GDB Compiler</title>
+
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist\css\bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/bea0c2eccf.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  </head>
+  <body>
+
+        <div class="collapse-horizontal show" id="collapseExample">
+          <div class="head">
+            <h5>OnlineGDB<sup>beta</sup></h5>
+          </div>
+          <p class="p">online compiler and debugger for c/c++</p>
+          <hr />
+          <p class="body">code. compile. run. debug. share.</p>
+          <button type="button" class="left-container-btns" name="button"><a href="https://www.onlinegdb.com/"><strong>IDE</strong></a></button>
+          <button type="button" class="left-container-btns" name="button"><a href="https://www.onlinegdb.com/myfiles"><strong>My Projects</strong></a></button>
+          <button type="button" class="left-container-btns" name="button"><a href="https://www.onlinegdb.com/classroom"><strong>Classroom<span class="badge bg-danger" style="background-color: ##D9534F; width: 30px;height:18px; font-size: 10px;">New</span></strong></a></button>
+          <button type="button" class="left-container-btns" name="button"><a href="https://learn.onlinegdb.com/"><strong>Learn Programming</strong></a></button>
+          <button type="button" class="left-container-btns" name="button"><a href="https://question.onlinegdb.com/"><strong>Programming Questions</strong></a></button>
+          <button type="button" class="left-container-btns" name="button"><a href="https://www.onlinegdb.com/register"><strong>Sign Up</strong></a></button>
+          <button type="button" class="left-container-btns" name="button"><a href="https://www.onlinegdb.com/login"><strong>Login</strong></a></button>
+          <button class="btn btn-sm collapse-control-prev collapsing-btn" type="button"   aria-controls="collapseExample">
+        <strong>&lt;</strong>
+      </button>
+        </div>
+        <div class="sidebar-hidden" >
+          <button type="button" name="button" id="collapse-show" class="icon" ></button>
+        </div>
+        <div class="right-container">
+          <div class="right-container-head">
+            <button type="button" name="button" class="file-btn" data-bs-toggle="tooltip" title="New File (Ctrl+M)" data-bs-placement="right"><i class="fa-solid fa-file"></i></button>
+            <button type="button" name="button" class="upload-btn" data-bs-toggle="tooltip" title="Upload File" ><i class="fa-solid fa-cloud-arrow-up"></i></button>
+            <button type="button" name="button" class="run-btn" data-bs-toggle="tooltip" title="F9"><i class="fa-solid fa-caret-right"></i> Run</button>
+            <button type="button" name="button" class="debug-btn" data-bs-toggle="tooltip" title="F8"><i class="fas fa-caret-circle-right"></i> Debug</i></button>
+            <button type="button" name="button" class="stop-btn" disabled ><i class="fa-solid fa-square"></i> Stop</button>
+            <button type="button" name="button" class="share-btn"  ><i class="fa-solid fa-share-from-square"></i> Share</button>
+            <button type="button" name="button" class="save-btn" data-bs-toggle="tooltip" title="Ctrl+S" ><i class="fa-solid fa-floppy-disk"></i> Save</button>
+            <button type="button" name="button" class="Beautify-btn" data-bs-toggle="tooltip" title="Ctrl+B" ><i class="fas fa-brackets-curly"></i> Beautify</button>
+            <button type="button" name="button" class="download-btn me-5" data-bs-toggle="tooltip" title="Download Code" ><i class="fa-solid fa-download "></i></button>
+            <div class="lang me-5" style="float: right">
+              <span style="color: #000">Language</span>
+              <select id="languages" name="" onchange="changeL()">
+                <option value="c" selected disabled>--Select--</option>
+                <option value="cpp" >c++</option>
+                <option value="c">c</option>
+                <option value="java">java</option>
+              </select>
+              <button type="button" name="button" class="righthand-btn"><i class="fas fa-info-circle"></i></button>
+              <button type="button" name="button" class="righthand-btn"><i class="fas fa-cog"></i></button>
+            </div>
+
+          </div>
+          <div class="right-container-middle">
+            <button class="main">main.cpp</button>
+          </div>
+          <div class="right-container-main">
+            <div class="row-cols-2">
+              <div class="col-1 index ps-4">
+
+              </div>
+              <div class="col-auto">
+                <div contenteditable="true" class=" col-auto comment">
+                  /******************************************************************************<br /><br>
+                  Welcome to GDB Online.<br>
+                  GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,<br />
+                  C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.<br />
+                  Code, Compile, Run and Debug online from anywhere in world.<br><br>
+                  *******************************************************************************/<br>
+              </div>
+              <div contenteditable="true" class="coding">
+
+<span style="color: #9F6D33;">#include</span> <span style="color: #6C99BB">&lt;iostream&gt;</span><br><br>
+
+<span style="color: #9F6D33;">using namespace std;</span><br><br>
+
+int main()<br>
+{<br>
+  &nbsp;&nbsp;  cout<span style="color: #9F6D33;">&lt;&lt;</span><span style="color: #A1A241;">"Hello World"</span>;<br><br>
+
+  &nbsp;&nbsp;  <span style="color: #9F6D33;">return</span>  <span style="color: #6C99BB">0</span>;<br>
+}
+              </div>
+            </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+<script src="bootstrap-5.2.0-beta1-dist\js\bootstrap.js" charset="utf-8"></script>
+<script src="index.js" charset="utf-8"></script>
+  </body>
+</html>

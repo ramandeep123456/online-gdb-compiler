@@ -1,0 +1,222 @@
+.left-container-btns a:link, .left-container-btns a:visited{
+  width:300px;
+  height: 27px;
+  background-color: #337AB7;
+  color:white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 3px 3px;
+
+}
+.left-container-btns{
+  padding: 0;
+  border:1px grey solid;
+  border-top:1px;
+border-right:0;
+border-left: 0;
+font-size: 13px;
+}
+.left-container-btns a:hover {
+
+  background-color: white;
+  color:#337AB7;
+}
+.collapse-horizontal {
+  width: 300px;
+  height: 100vh;
+  transition: width 0.35s ease;
+  background-color: #125792;
+  text-align: center;
+  padding: 1% 0;
+  position: absolute;
+  overflow: hidden;
+}
+.collapsing-btn{
+  background-color: #0F3A5F;
+  position: absolute;
+  right:0;
+  color:white;
+}
+body{
+  color:white;
+  font-family: sans-serif;
+}
+.body{
+  font-size: 15px;
+  color: #BFE0E0;
+}
+.p{
+  font-size: 11px;
+  color: #BFE0E0;
+}
+.sidebar-hidden{
+  background-color: #125792;
+
+  height: 100vh;
+  width: 46px;
+  overflow: hidden;
+  padding: 1%;
+}
+.icon{
+
+
+  height: 20px;
+  width: 20px;
+}
+.head h5{
+  font-weight:700;
+}
+.right-container{
+  width: 80.4vw;
+  position: absolute;
+  left:300px;
+  top:0;
+}
+.right-container-head{
+  background-color: #C5C5C5;
+  padding-top: 0.5px
+}
+.right-container-middle{
+  background-color: #757575;
+
+
+  font-size: 0.8rem;
+
+}
+.right-container-main{
+  background-color: #323232;
+  position: absolute;
+  width: 100%;
+  border: 0;
+  line-height: 1.2;
+}
+.right-container-main:focus{
+  background-color: #323232;
+  position: absolute;
+  width: 100%;
+  border: black;
+  line-height: 1.2;
+}
+
+.index{
+  background-color: #3B3B3B;
+  color:grey;
+  width: 50px;
+  height: 93vh;
+  float: left;
+}
+.main{
+  background-color:#337AB7;
+  border: 0;
+  color: white;
+  padding: 2px;
+  padding-right: 2.4rem;
+  /* font-size: 0.8rem; */
+}
+.big{
+
+  width: 97vw;
+  left:46px;
+}
+.file-btn, .upload-btn{
+  margin: 2px;
+  margin-top: 0;
+  background-color: white;
+  border: none;
+  height: 23px;
+}
+.file-btn:hover, .upload-btn:hover{
+  background-color: #E6E6E6
+}
+.run-btn{
+  background-color: #5CB85C;
+  color: white;
+  border-width: 0;
+  height: 23px;
+  width : 65px;
+  font-size: 0.9rem;
+}
+.run-btn:hover{
+  background-color: #449D44
+}
+.debug-btn{
+  background-color:#337AB7;
+  color: white;
+  border-width: 0;
+  height: 23px;
+  width : 65px;
+  font-size: 0.9rem;
+}
+.debug-btn:hover{
+  background-color: #286090
+}
+.stop-btn:disabled{
+  background-color: #D27B79;
+  color: #EBEBEB;
+  border-width: 0;
+  height: 23px;
+  width : 65px;
+  font-size: 0.9rem;
+  cursor: not-allowed;
+}
+.share-btn{
+  background-color: #F0AD4E;
+  color: white;
+  border-width: 0;
+  height: 23px;
+  width : 75px;
+  font-size: 0.9rem;
+}
+.share-btn:hover{
+  background-color:#EC971F
+}
+.save-btn{
+  background-color: #337AB7;
+  color: white;
+  border-width: 0;
+  height: 23px;
+  width : 65px;
+  font-size: 0.9rem;
+}
+.save-btn:hover{
+  background-color: #286090
+}
+.Beautify-btn, .download-btn{
+  background-color: rgb(91,192,222);
+  color: white;
+  border-width: 0;
+  height: 23px;
+  font-size: 0.9rem;
+  width: 77px;
+}
+.Beautify-btn:hover, .download-btn:hover{
+  background-color: #31B0D5;
+}
+.download-btn{
+  padding: 0 15px;
+}
+.righthand-btn{
+  background-color: #F0AD4E;
+  margin: 0 3px 5px 0;
+  color: white;
+  border: none;
+}
+.righthand-btn:hover{
+  background-color: #EC971F;
+}
+#languages{
+  outline: none;
+}
+.comment{
+  outline: none;
+  font-weight: 400;
+  color: rgb(165,194,97);
+  font-family: 'Roboto Mono', monospace;
+}
+.coding{
+  outline: none;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  font-size:1rem;
+}
